@@ -1,24 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from "react";
+import axios from "axios";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
+import Footer from "./components/footer/Footer";
+import Navbar from "./components/navbar/Navbar";
+import ProductDetails from "./pages/ProductDetails";
+import ProductList from "./pages/ProductList";
+import { UserContext } from "./UserContext";
 
 function App() {
+  const [productList, setProductList] = useState()
+  const [selectedProduct, setSelectedProduct] = useState();
+
+  useEffect(() => {
+    axios.get('https://fakestoreapi.com/products').then((response) => {
+      const shopData = response.data;
+      setProductList(shopData);
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  console.log('response', productList, 'lol', selectedProduct);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <BrowserRouter>
+      <div>
+        <UserContext.Provider
+          value={{
+            selectedProduct,
+            setSelectedProduct,
+            productList, 
+            setProductList
+          }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<ProductList />} />
+            <Route path="/product-page" element={<ProductDetails />} />
+          </Routes>
+          <Footer />
+        </UserContext.Provider>
+      </div>
+    </BrowserRouter>
   );
 }
 

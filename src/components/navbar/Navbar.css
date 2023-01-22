@@ -1,0 +1,31 @@
+.text-style {
+  text-transform: uppercase;
+  color: #656565;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  -webkit-transform: scale(1.1, 1);
+  -moz-transform: scale(1.1, 1);
+  -o-transform: scale(1.1, 1);
+  transform: scale(1.1, 1);
+  padding: 20px!important;
+}
+
+.icon-alignment {
+  position: absolute;
+  top: 13px;
+  right: 0px;
+}
+
+.spacing {
+  padding: 15px;
+}
+
+.spacing-red {
+  padding: 20px 25px;
+  background: #970100;
+  text-shadow:
+-1px 0px 0px #fff,
+1px 0px 0px #fff,
+0px -1px 0px #fff,
+0px 1px 0px #fff;
+}
