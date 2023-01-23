@@ -1,0 +1,10 @@
+.bottom-desc {
+    position: relative;
+    bottom: 75px;
+    background: linear-gradient(transparent, black);
+    color: #f4e342;
+    height: 75px;
+    font-size: 12px;
+    padding: 7px 20px;
+    line-height: 15px;
+}

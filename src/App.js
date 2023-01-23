@@ -13,14 +13,14 @@ function App() {
   const [selectedProduct, setSelectedProduct] = useState();
 
   useEffect(() => {
-    axios.get('https://fakestoreapi.com/products').then((response) => {
-      const shopData = response.data;
+    axios.get('https://dummyjson.com/products').then((response) => {
+      const shopData = response.data.products;
       setProductList(shopData);
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  console.log('response', productList, 'lol', selectedProduct);
+  productList && console.log('response', productList, 'lol', selectedProduct);
 
   return (
     <BrowserRouter>

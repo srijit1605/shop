@@ -1,0 +1,30 @@
+.actual-price {
+  color: #656565;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+}
+
+.new-price {
+  color: #990100;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+}
+
+.discount {
+  color: #9fbf60;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+}
+
+.prod-title {
+  color: #323232;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  margin: 0;
+}
+
+.card-styling {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

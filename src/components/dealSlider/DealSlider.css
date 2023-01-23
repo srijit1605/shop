@@ -1,0 +1,15 @@
+.deal-ribbon {
+    color: #656565;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+    bottom: 70px;
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.size-adjust {
+    padding: 1rem 4rem;
+}

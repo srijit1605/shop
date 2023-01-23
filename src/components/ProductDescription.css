@@ -1,0 +1,94 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .buy-btn {
+    background-color: #990100;
+    color: #efefef;
+    padding: 10px 32px;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    transition: all ease 0.5s;
+    position: relative;
+  }
+
+  .buy-btn:hover {
+    background-color: #640000;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .cart-btn {
+    padding: 8px 32px;
+    border: 2px solid #990100;
+    border-radius: 4px;
+    background-color: #efefef;
+    color: #990100;
+    text-transform: uppercase;
+    z-index: 1900;
+    cursor: pointer;
+    outline: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    transition: all ease 0.5s;
+    position: relative;
+    margin: 14px;
+  }
+  .cart-btn:hover {
+    background-color: #990100;
+    color:#efefef;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  .cart-btn .count {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    display: inline-flex;
+    top: 0;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    background-color: #85cb33;
+    justify-content: center;
+    align-items: center;
+    color: #212121;
+    font-size: 14px;
+    border-radius: 400px;
+    transition: all ease 1s;
+    z-index: 1;
+  }
+  
+  .cart {
+    position: absolute;
+    top: -8px;
+    right: 130px;
+    z-index: 1900;
+    margin: auto;
+    border-radius: 4px;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    margin: 15px;
+    font-size: 20px;
+    color: transparent;
+  }
+  .cart .count {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: #85cb33;
+    border-radius: 500px;
+    font-size: 14px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    right: 0px;
+    color: #100b00;
+    transform: translate(50%, -50%);
+    z-index: 1;
+  }

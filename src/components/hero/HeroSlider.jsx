@@ -43,7 +43,7 @@ const HeroSlider = () => {
               return (
                 <div
               className={`produkt-item ${idx=== liveIndex ? "current" : ""}`}
-              style={{backgroundImage: `url(${singleProduct.image})`, backgroundSize: 'contain'}}
+              style={{backgroundImage: `url(${singleProduct.thumbnail})`, backgroundSize: 'contain'}}
               onClick={(e)=>{
                 e.preventDefault();
                 setSelectedProduct(singleProduct)

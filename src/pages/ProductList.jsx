@@ -3,9 +3,9 @@ import { UserContext } from "../UserContext";
 import About from "../components/about/About";
 import AppPromo from "../components/AppPromo";
 import CardCategories from "../components/CardCategories";
-import DealSlider from "../components/DealSlider";
+import DealSlider from "../components/dealSlider/DealSlider";
 import Hero from "../components/hero/Hero";
-import PeopleSlider from "../components/PeopleSlider";
+import PeopleSlider from "../components/peopleSlider/PeopleSlider";
 import Services from "../components/Services";
 import "./Pages.css";
 
